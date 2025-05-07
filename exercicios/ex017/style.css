@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    /*
+    Medidas Absolutas
+    cm, mm, in (Polegada), px, {Medidas de papel | pt (Ponto), pc (Paica)}
+    
+    Medidas Relativas
+    em = Relativa ao tamanho relativo da fonte, ex = Relativa ao tamanho relativo ao x da fonte, rem = Relativo a fonte do BODY, vw = Relativo a porcentagem da largura da View Port, vh = Relativo a porcentagem da altura da Viewport
+
+    Usar o px ou em ( 1em = 16px)
+    */
+    
+    font: 100 1em 'Work Sans', sans-serif;
+    /* shorthand | font: font-style -> font-weight -> font-size -> font-family */
+    
+}
