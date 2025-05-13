@@ -18,6 +18,12 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
         }
 
         td, th {
@@ -29,6 +35,10 @@
             text-align: center;
             background-color: rgb(0, 0, 0);
             color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         .total {
@@ -59,8 +69,8 @@
 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -174,7 +184,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
 
             <td class="total"><strong>212.583.750</strong></td>
         </tfoot>
